@@ -85,7 +85,7 @@ int main(){
 }
 
 
-palindrome
+6)palindrome
 #include<iostream>
 using namespace std;
 int main(){
@@ -108,4 +108,61 @@ int main(){
     return 0;
 }
 
-armstrong number
+7)armstrong number
+#include<iostream>
+using namespace std;
+int main()
+{
+int num=153,originalnum,rem,result=0;
+originalnum=num;
+while(originalnum!=0){
+ rem = originalnum%10;
+    result+=rem*rem*rem;
+originalnum/=10;}
+    if(result==num)
+ {cout<<num<<"is a arm strong number"<<endl;
+    }
+else
+    {
+ cout<<"is not an arm strong number"<<endl;
+    }
+return 0;
+}
+
+8)fibanocci series
+#include<iostream>
+using namespace std;
+
+int main() {
+    int i, n1 = 0, n2 = 1, n = 10;
+    int nt;
+    
+    cout << n1 << " " << n2 << " ";
+    
+    for (i = 2; i < n; i++) {
+        nt = n1 + n2;
+        cout << nt << " ";
+        n1 = n2;
+        n2 = nt;
+    }
+    
+    return 0;
+}
+
+9)factorial
+#include<iostream>
+using namespace std;
+int main(){
+    int i,n=5,fact=1;
+    for(i=1;i<=n;i++)
+    {
+        fact*=i;
+    }
+    cout<<"factorial="<<fact;
+    return 0;
+}
+
+
+lcm and gcd
+
+
